@@ -17,7 +17,7 @@ function yeetanswers() {
   setTimeout(function () {
     SubmitTestResultClick();
     document.getElementsByClassName("swal2-confirm swal2-styled")[0].click();
-  }, 60000);
+  }, 600000);
 
 }
 var script = document.createElement('script');
