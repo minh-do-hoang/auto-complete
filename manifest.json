@@ -1,0 +1,40 @@
+{
+    "name": "AutoCorrect",
+    "version": "1.0",
+    "description": "9.8 GPA ez game",
+	"permissions": [
+    "storage"
+   ],
+   "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+	 "content_scripts": [
+   {
+     "matches": ["http://study.hanoi.edu.vn/lam-bai/*"],
+	 "run_at": "document_end",
+     "js": ["contentScript.js"]
+   },
+   {
+     "matches": ["http://study.hanoi.edu.vn/ky-thi/*"],
+	 "run_at": "document_end",
+     "js": ["contentScript2.js"]
+   },
+   {
+     "matches": ["http://study.hanoi.edu.vn/huong-dan-thi/*"],
+	 "run_at": "document_end",
+     "js": ["contentScript3.js"]
+   },
+   {
+     "matches": ["http://study.hanoi.edu.vn/ket-qua-thi/*"],
+	 "run_at": "document_end",
+     "js": ["contentScript4.js"]
+   },
+   {
+     "matches": ["http://study.hanoi.edu.vn/"],
+	 "run_at": "document_end",
+     "js": ["contentScript5.js"]
+   }
+ ],
+    "manifest_version": 2
+  }
