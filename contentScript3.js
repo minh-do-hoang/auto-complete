@@ -1,3 +1,3 @@
 setTimeout(function () {
-        document.getElementById("start-test").click();
-    }, 100);
+  document.getElementById("start-test").click();
+}, 100);

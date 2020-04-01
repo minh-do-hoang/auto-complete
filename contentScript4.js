@@ -1,3 +1,3 @@
 setTimeout(function () {
- 	document.getElementsByClassName("navbar-brand ")[0].click();
-    }, 100);
+  document.getElementsByClassName("navbar-brand ")[0].click();
+}, 100);
