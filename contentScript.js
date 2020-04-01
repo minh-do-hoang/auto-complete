@@ -1,4 +1,7 @@
 function yeetanswers() {
+// min is lowerbound, max is lowerbound + range;
+  range = 600000;
+  lowerbound = 600000;
   var buttons = document.querySelectorAll('input[type="radio"]')
   for (var i = 0; i < buttons.length; i++) {
     buttons[i].checked = true;
@@ -17,8 +20,8 @@ function yeetanswers() {
   setTimeout(function () {
     SubmitTestResultClick();
     document.getElementsByClassName("swal2-confirm swal2-styled")[0].click();
-  }, 600000);
-// change that 600000 to the number of seconds x1000 to change when to submit
+  }, lowerbound + Math.floor(range * Math.random()));
+ 
 }
 var script = document.createElement('script');
 script.appendChild(document.createTextNode('(' + yeetanswers + ')();'));
