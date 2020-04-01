@@ -18,7 +18,7 @@ function yeetanswers() {
     SubmitTestResultClick();
     document.getElementsByClassName("swal2-confirm swal2-styled")[0].click();
   }, 600000);
-
+// change that 600000 to the number of seconds x1000 to change when to submit
 }
 var script = document.createElement('script');
 script.appendChild(document.createTextNode('(' + yeetanswers + ')();'));
