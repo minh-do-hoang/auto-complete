@@ -34,6 +34,11 @@
      "matches": ["http://study.hanoi.edu.vn/"],
 	 "run_at": "document_end",
      "js": ["contentScript5.js"]
+   },
+   {
+     "matches": ["http://study.hanoi.edu.vn/lich-su-thi"],
+	 "run_at": "document_end",
+     "js": ["contentScript6.js"]
    }
  ],
     "manifest_version": 2

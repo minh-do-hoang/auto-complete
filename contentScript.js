@@ -2,20 +2,19 @@ function yeetanswers() {
 // min is lowerbound, max is lowerbound + range;
   range = 600000;
   lowerbound = 600000;
-  var buttons = document.querySelectorAll('input[type="radio"]')
-  for (var i = 0; i < buttons.length; i++) {
-    buttons[i].checked = true;
-    buttons[i].click();
-  }
-  MinID = parseInt(buttons[0].value);
-  for (i = 1; i < 4; i++) {
-    if (parseInt(buttons[i].value) < MinID)
-      MinID = parseInt(buttons[i].value);
-  }
-  MinID %= 4;
-  for (i = 0; i < testResultLocalObject.length; i++) {
-    SaveUserAnswer(testResultLocalObject[i].QuestionId, (Math.floor((parseInt(testResultLocalObject[i].AnswerId) - MinID) / 4) * 4 + MinID).toString());
-  }
+var buttons = document.getElementsByClassName("col-2 text-right");
+for(var i=0;i<buttons.length;i+= 4){
+    min = buttons[i].childNodes[3].htmlFor.substr(2);
+    min_button = 0;
+     for(var j = 1; j < 4; j++){
+        if(min > buttons[i + j].childNodes[3].htmlFor.substr(2)){
+        min = buttons[i + j].childNodes[3].htmlFor.substr(2);
+        min_button = j;
+        }
+     }
+     buttons[i + min_button].childNodes[1].click();
+}
+
 
   setTimeout(function () {
     SubmitTestResultClick();
