@@ -13,4 +13,4 @@
   
 Basically, **you can leave the tab alone and it'll do everything by itself**.
 
-~~*(Optional features include randomizing so that there are wrong answers, and disabling auto selection. Click on branch and select the corresponding option to choose them if you want to)~~
+~~*(Optional features include randomizing so that there are wrong answers, and disabling auto selection. Click on branch and select the corresponding option to choose them if you want to)*~~
