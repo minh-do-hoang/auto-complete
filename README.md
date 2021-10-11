@@ -1,6 +1,6 @@
 # AutoComplete  
- 9.8 gpa ez game  
-
+ (This bug of their website has been submitted to Hanoi Department of Education and Training and has been patched before this repository was published.)  
+ 
  1. Download and unzip.
  2. Go to chrome://extensions/ and enable Developer mode.
  3. Click on **Load unpacked**, then select the folder you've unzipped to in step 1. 
